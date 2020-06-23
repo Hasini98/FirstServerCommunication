@@ -7,6 +7,9 @@ public class ApiClient {
     static String base_url = "https://rss.itunes.apple.com/api/v1/";
     static Retrofit retrofit = null;
 
+
+
+
     public static Retrofit getClient()
     {
         if(retrofit ==null){

@@ -34,8 +34,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
         textView =findViewById(R.id.textView);
         apiService = ApiClient.getClient().create(ApiInterface.class);
         getRequest();
@@ -61,7 +59,6 @@ public class MainActivity extends AppCompatActivity {
                        urls[i] = album.getArtworkUrl100();
                        i++;
                 }
-
 //                   for(String arr: urls){
 //                        Log.v("msg ",arr);
 //                    }
@@ -86,7 +83,6 @@ public class MainActivity extends AppCompatActivity {
 
                 }*/
             }
-
             @Override
             public void onFailure(Call<MovieResponse> call, Throwable t) {
                 textView.setText(t.getMessage());

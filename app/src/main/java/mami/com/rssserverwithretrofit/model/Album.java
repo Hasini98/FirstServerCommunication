@@ -33,13 +33,11 @@ public class Album {
          private  String name;
          @SerializedName("url")
          private String url;
-
          public Genre(Integer genreId, String name, String url) {
              this.genreId = genreId;
              this.name = name;
              this.url = url;
          }
-
          public Integer getGenreId() {
              return genreId;
          }
@@ -66,10 +64,8 @@ public class Album {
      }
      @SerializedName("genres")
     private List<Genre> genres;
-
      @SerializedName("url")
      private String url;
-
     public Album(String artistName, Integer id,
                  String releaseDate, String name,
                  String kind, String copyright,
@@ -91,11 +87,9 @@ public class Album {
         this.genres = genres;
         this.url = url;
     }
-
     public String getArtistName() {
         return artistName;
     }
-
     public void setArtistName(String artistName) {
         this.artistName = artistName;
     }
